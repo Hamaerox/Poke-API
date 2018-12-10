@@ -1,0 +1,300 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    /* background-color: skyblue; */
+    background: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/A2KqU29/seamless-blue-particle-background-in-4k_41uagba1l__F0000.png') center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background: url('https://d24hkyf7t7q9y9.cloudfront.net/assets/article/2017/02/27/pok_feature.jpg') center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 100%;
+}
+
+a {
+    /* width: 96%; */
+    text-decoration: none;
+    color: teal;
+    font-size: xx-large;
+    border-style: solid;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1.0);
+} 
+
+.navColor {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: aqua;
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+    padding: 0;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+}
+
+.articuno {
+    display: inline-block;
+    width: 25%;
+}
+
+.zapdos {
+    display: inline-block;
+    width: 25%;
+}
+
+.moltres {
+    display: inline-block;
+    width: 25%;
+}
+
+.lugia {
+    display: inline-block;
+    width: 25%;
+}
+
+/* .searchDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+} */
+
+.searchDiv form {
+    /* display: flex;
+    justify-content: center */
+    margin-left: 40%;
+}
+
+.about {
+    display: inline-block;
+}
+
+.charizard {
+    display: inline-block;
+    width: 70%;
+    position: fixed;
+    background-size: cover;
+    top: 28%;
+}
+
+h4{
+    width: 200px;
+    background-color: white;
+    padding: 15px;
+    font-family: monospace;
+    color: blue;
+}
+
+.contactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fName,
+.lName,
+.email,
+.description {
+    margin-top: 5px;
+    width: 300px;
+}
+
+.fName {
+    margin-top: 50px;
+}
+
+.description {
+    height: 100px;
+}
+
+.pokeImg {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+    margin-top: -4%;
+}
+
+.menu,
+.menu.open {
+  cursor: pointer;
+  position: fixed;
+  top: 5%;
+  z-index: 9999;
+  background: yellow;
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 1.0);
+}
+
+.menu .bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.menu.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+  transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.menu.open .bar2 {
+  opacity: 0;
+}
+
+.menu.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.popup-overlay {
+    width: 50%;
+    height: 30%;
+    flex-direction: column;
+    opacity: 1.0;
+    background-color: aqua !important;
+    /* opacity: 0.9; */
+}
+
+.no-suggestions {
+color: #999;
+padding: 0.5rem;
+}
+
+.suggestions {
+border: 1px solid #999;
+border-top-width: 0;
+list-style: none;
+margin-top: 0;
+max-height: 143px;
+overflow-y: auto;
+padding-left: 0;
+width: calc(113px + 1rem);
+background-color: skyblue;
+}
+
+.suggestions li {
+padding: 0.5rem;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+background-color: blue;
+color: white;
+cursor: pointer;
+font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+border-bottom: 1px solid black;
+}
+
+
+.button-container {
+    display: flex;
+}
+
+.gen-button {
+background-color: blue;
+padding: 5px;
+color: white;
+border: none;
+font-family: 'Anton', sans-serif;
+font-size: 20px;
+margin: 10px;
+width: 200px;
+border-radius: 3px;
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.gen-button:hover {
+background-color: orangered;
+cursor: pointer;
+}
+
+.pokemon-container {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.pokemon-single-container {
+width: 200px;
+height: 200px;
+position: relative;
+font-family: 'Anton', sans-serif;
+text-transform: uppercase;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+background-color: #ededed;
+color: #424242;
+opacity: 0.8;
+margin: 10px;
+border-radius: 3px;
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.sprites {
+    height: 100%;
+    width: 100%;
+    opacity: 1.0 !important;
+}
+
+.pokemon-single-container:hover {
+cursor: pointer;
+background-color: forestgreen;
+}
+
+.align-bottom {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+padding-bottom: 8px;
+}
+
+.pokeball {
+    height: 80%;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.pokeBut {
+    width: 5%;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+@media (maxwidth: 320px)
