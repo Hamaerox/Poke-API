@@ -150,16 +150,12 @@ class Home extends Component{
         })
 
         return(
-            <div>   
-                <div className='container'>
-                <div className='articuno'> <img src='http://pokestadium.com/sprites/xy/articuno.gif'/></div>
-                <div className='zapdos'> <img src='http://pokestadium.com/sprites/xy/zapdos.gif'/></div>
-                <div className='moltres'> <img src='http://pokestadium.com/sprites/xy/moltres.gif '/></div>
-                <div className='lugia'> <img src='http://pokestadium.com/sprites/xy/lugia.gif'/> </div>
-                <div className=''></div>
-                    <h1>Welcome to the Poke Infobase</h1>
+            <div className='pokeContainer'>   
+                    <h1>Welcome to the Poke Search</h1>
+                    <br></br>
+                    <h3>Here, you can search your favorite pokemon</h3>
                     <div className='searchDiv'>
-                        <form onSubmit={this.handleSubmit}>
+                        <form className='searchForm' onSubmit={this.handleSubmit}>
                             <input 
                                 autoComplete='off'
                                 type='text' 
@@ -169,7 +165,6 @@ class Home extends Component{
                                 value={userInput}
                                 onKeyDown={onKeyDown}/>
                                 {suggestionsListComponent}
-                            {/* <button>Search</button> */}
                             <button className='pokeBut'><img className='pokeball' src='https://sickr.files.wordpress.com/2013/09/pokeball.png'/></button>
                         </form>
                     </div>
@@ -179,7 +174,6 @@ class Home extends Component{
                     <div className='pokeImg'>
                         <img src={this.state.pokePic} alt=""/>
                     </div>
-                </div>
             </div>
         )
     }
