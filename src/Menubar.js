@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export default ({ open, ...props }) => (
   <div className={open ? "menu open" : "menu"} {...props}>

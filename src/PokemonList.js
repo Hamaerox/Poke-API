@@ -16,10 +16,7 @@ class PokemonList extends React.Component {
     handleGenChange(generation) {
         this.setState({ generation })
     }
-    getSinglePokemon(){
-        // send a GET to /pokemon/${this.state.currentPokemon}
-        
-    }
+
     getPokemon() {
         fetch("https://pokeapi.co/api/v2/pokemon/?limit=386", {
         method: "GET"

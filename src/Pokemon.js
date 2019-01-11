@@ -8,11 +8,13 @@ class Pokemon extends Component {
         }
         this.handleClick = this.handleClick.bind(this)
     }
+    
     handleClick() {
         this.setState(prevState => ({
             isBack: !prevState.isBack
         }))
     }
+
     render() {
         let pokemon = this.props.pokemon;
         switch (pokemon) {
